@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      .subheading {
+        color: #3366cc; /* Set the text color */
+        font-size: 1.5em; /* Set the font size */
+        font-weight: bold; /* Set the font weight to bold */
+        text-align: center; /* Center the text */
+        margin-bottom: 20px; /* Add some bottom margin */
+      }
+      .moving-strip {
+        width: 100%;
+        background-color: #3498db;
+        color: #ffffff;
+        padding: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      /* Adjust the speed and direction of the scrolling text */
+      .moving-text {
+        animation: moveLeft 15s linear infinite;
+      }
+
+      @keyframes moveLeft {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+
+.show-modal {
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <table style="width: 100%">
+      <tr>
+        <td colspan="7" align="left">
+          <h1 style="color: #3366cc">KnowledgeHaven Library</h1>
+        </td>
+        <td colspan="8" align="center">
+          <img src="logo.jpg" style="height: 100px" />
+        </td>
+      </tr>
+
+      <tr style="background-color: #3366cc">
+        <td align="center" style="padding: 10px">
+          <a href="index.html" style="color: aliceblue">Home</a>
+        </td>
+        <td align="center" style="padding: 10px">
+          <a href="about.html" style="color: aliceblue">About Us</a>
+        </td>
+        <td align="center" style="padding: 10px">
+          <a href="category.html" style="color: aliceblue">Book Categories</a>
+        </td>
+        <td align="center" style="padding: 10px">
+          <a href="books.html" style="color: aliceblue">Our Books</a>
+        </td>
+        <td align="center" style="padding: 10px">
+          <a href="bestselling.html" style="color: aliceblue">Best Selling</a>
+        </td>
+        <td align="center" style="padding: 10px">
+          <a href="new.html" style="color: aliceblue">New Releases</a>
+        </td>
+        <td align="center" style="padding: 10px">
+          <a href="authors.html" style="color: aliceblue">Authors</a>
+        </td>
+        <td align="center" style="padding: 10px">
+          <a href="contact.html" style="color: aliceblue">Contact Us</a>
+        </td><tr>        <td colspan="8">
+          <div class="moving-strip">
+            <div class="moving-text">
+NEW! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NEW!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEW!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEW!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEW!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEW!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+          </div>
+        </td></tr>
+      </tr>
+      <tr>
+        <td colspan="8" style="padding: 20px 10px" align="center">
+          <h2>
+            <a
+              href="authors.html"
+              style="background-color: aliceblue; color: #3366cc"
+              >Authors</a
+            >
+          </h2>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding: 5px 10px">
+          <button class="show-modal"><img src="chinua.jpeg" style="width: 330px; height: 300px" /></button>
+          <button class="show-modal">Chinua Achebe</button>
+          <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+          <h1>Author 1</h1>
+          <br>
+          <p>content</p> 
+          <br>
+          <br>
+          <h1>Author 2</h1> 
+          <br>
+          <p>content</p> 
+          <br>
+          <br>
+          <h1>Author 3</h1> 
+          <br>
+          <p>content</p> 
+          <br>
+          <br>
+          <h1>Author 4</h1> 
+          <br>
+          <p>content</p> 
+          <br>
+          <br>
+          </div>
+          <div class="overlay hidden"></div>
+        </td>
+
+        <td colspan="2" style="padding: 5px 10px">
+          <button class="show-modal"><img src="julian.webp" style="width: 330px; height: 300px" /></button>
+          <button class="show-modal"><h3>Julian Baggini</h3></button>
+        </td>
+
+        <td colspan="2" style="padding: 5px 10px">
+          <button class="show-modal"><img src="blake.webp" style="width: 330px; height: 300px" /></button>
+          <button class="show-modal"><h3>Quentin Blake</h3></button>
+        </td>
+
+        <td colspan="2" style="padding: 5px 10px">
+          <button class="show-modal"><img src="saul.webp" style="width: 330px; height: 300px" /></button>
+          <button class="show-modal"><h3>Saul Bellow</h3></button>
+        </td>
+
+      </tr>
+
+      <tr>
+        <td colspan="8"><img src="banner.jpg" style="width: 100%" /></td>
+      </tr>
+
+      <tr>
+        <td colspan="8" style="padding: 20px 10px" align="center">
+          <h2>
+            <a
+              href="category.html"
+              style="background-color: aliceblue; color: #3366cc"
+              >Book Categories</a
+            >
+          </h2>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" style="padding: 5px 10px">
+         <a href="art.html"> <img src="art.jpg" style="width: 330px; height: 300px" /></a>
+        <h3><a href="art.html" style="color: black;">Art and Photography</a></h3>
+        </td>
+
+        <td colspan="2" style="padding: 5px 10px">
+          <a href="crime.html"><img src="crime.jpg" style="width: 330px; height: 300px" /></a>
+          <h3><a href="crime.html" style="color: black;">Thriller and Crime</a></h3>
+        </td>
+
+        <td colspan="2" style="padding: 5px 10px">
+        <a href="fiction.htm">  <img src="fiction.jpg" style="width: 330px; height: 300px" /></a>
+        <h3><a href="fiction.htm" style="color: black;">Science Fiction</a></h3>
+        </td>
+
+        <td colspan="2" style="padding: 5px 10px">
+          <a href="horror.htm"><img src="horror.jpg" style="width: 330px; height: 300px" /></a>
+          <h3><a href="horror.htm"style="color: black;">Horror and Fantasy</a></h3>
+        </td>
+      </tr>
+      <tr></tr>
+      <tr>
+        <td colspan="8" style="padding: 20px 10px" align="center">
+          <h2>
+            <a
+              href="books.html"
+              style="background-color: aliceblue; color: #3366cc"
+              >Our Books</a
+            >
+          </h2>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding: 5px 10px">
+          <img src="art 1.jpg" style="height: 200px" />
+          <h4>Inspiration in Photography</h4>
+           As a photographer, it’s possible to train your mind to see inspiration in any situation, and this book will show you how.
+          <p style="margin: 10px 0; color: green">Rs 899</p>
+          <p style="margin: 10px 0"><a href="contact.html">Shop Now</a></p>
+        </td>
+
+        <td style="padding: 5px 10px">
+          <img src="art 3.jpg" style="height: 200px" />
+          <h4>Let The Good Times Roll Up</h4>
+         The richly-written autobiography of legendary drummer for Small Faces, Faces, and The Who: Kenney Jones.
+          <p style="margin: 10px 0; color: green">Rs 499</p>
+          <p style="margin: 10px 0"><a href="contact.html">Shop Now</a></p>
+        </td>
+
+        <td style="padding: 5px 10px">
+          <img src="crime2.jpg" style="height: 200px" />
+          <h4>The Mirror Man</h4>  
+            The Mirror Man is the eighth volume in the Joona Linna saga and one of the weakest novels of the series.
+          <p style="margin: 10px 0; color: green">Rs 999</p>
+          <p style="margin: 10px 0"><a href="contact.html">Shop Now</a></p>
+        </td>
+
+        <td style="padding: 5px 10px">
+          <img src="thriller.jpg" style="height: 200px" />
+          <h4>Girl In Trouble</h4>
+          Girl leaves the farm for the big city of New Orleans to become famous, instead becomes a stripper & gets abused and exploited by everyone she meets.
+          <p style="margin: 10px 0; color: green">Rs 899</p>
+          <p style="margin: 10px 0"><a href="contact.html">Shop Now</a></p>
+        </td>
+
+        <td style="padding: 5px 10px">
+          <img src="thriller 1.jpeg" style="height: 200px" />
+          <h4>The Silent Patient</h4>
+          The Silent Patient is a shocking psychological thriller of a woman’s act of violence against her husband—and of the therapist obsessed with uncovering her motive.
+          <p style="margin: 10px 0; color: green">Rs 495</p>
+          <p style="margin: 10px 0"><a href="contact.html">Shop Now</a></p>
+        </td>
+
+        <td style="padding: 5px 10px">
+          <img src="thriller 5.jpg" style="height: 200px" />
+          <h4>The Winners</h4>
+          Two years have passed since the events that no one wants to think about. 
+          <p style="margin: 10px 0; color: green">Rs 769</p>
+          <p style="margin: 10px 0"><a href="contact.html">Shop Now</a></p>ō
+        </td>
+
+        <td style="padding: 5px 10px">
+          <img src="thriller 4.jpeg" style="height: 200px" />
+          <h4>The Girl In His Shadow</h4>
+        About a young woman, Nora Beady, who is raised by a physician, Horace Croft, and develops an interest in a life in medicine.
+          <p style="margin: 10px 0; color: green">Rs 799</p>
+          <p style="margin: 10px 0"><a href="contact.html">Shop Now</a></p>
+        </td>
+
+        <td style="padding: 5px 10px">
+          <img src="books12.jpeg" style="height: 200px" />
+          <h4>The Diamond Eye</h4>
+         An excellent historical fiction story about Mila Pavilchenko, the female Russian sniper who had more than 300 kills in WWII.
+          <p style="margin: 10px 0; color: green">Rs 599</p>
+          <p style="margin: 10px 0"><a href="contact.html">Shop Now</a></p>
+        </td>
+      </tr>
+
+      
+      
+      <tr style="background: #336799">
+        <td colspan="8" align="center">
+          <p style="color: #fff">Copyright 2023. All Rights Reserved</p>
+        </td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
